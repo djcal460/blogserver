@@ -6,8 +6,8 @@
 
 
 <% myPosts.forEach(function (x) { %> 
-    <h1> <%=x.title%>  </h1> 
-    <p> <%=x.body %>  </p>
+    <h1> <%= x.title%>  </h1> 
+    <p> <%= x.body.substring(0,40) + "..."  %> </p>
     
 <%})%>   
 <%- include('partials/footer') -%>  
