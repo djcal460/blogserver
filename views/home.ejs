@@ -4,4 +4,10 @@
 
 <p><%= startingContent  %> </p>
 
-<%- include('partials/footer') -%> 
+
+<% myPosts.forEach(function (x) { %> 
+    <h1> <%= x.postTitle %>  </h1> 
+    <p> <%= x.body %>  </p>
+    
+<%})%>   
+<%- include('partials/footer') -%>  
